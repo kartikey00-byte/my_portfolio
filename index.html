@@ -1,78 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kartikey Nautiyal | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Kartikey Nautiyal</h1>
-      <p>Computer Science Student | Data Science Enthusiast</p>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text">Kartikey Nautiyal</h1>
+            <p class="subtitle">Computer Science Student <span class="highlight">|</span> Data Science Enthusiast</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn"><i class="fa-solid fa-rocket"></i> View Projects</a>
+                <a href="#contact" class="btn secondary-btn"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-      <section class="card">
-        <h2>👤 About Me</h2>
-        <p>
-          I am a Computer Science student passionate about Data Science, Machine
-          Learning, and Problem Solving. I enjoy building real-world projects
-          and continuously improving my technical skills.
-        </p>
-      </section>
+    <main class="container">
+        <section class="card glass" id="about">
+            <h2><i class="fa-solid fa-user-tie"></i> About Me</h2>
+            <p>
+                I am a Computer Science student passionate about Data Science, Machine
+                Learning, and Problem Solving. I enjoy building real-world projects
+                and continuously improving my technical skills to create impactful solutions.
+            </p>
+        </section>
 
-      <section class="card">
-        <h2>🎯 Career Objective</h2>
-        <p>
-          To secure an opportunity in a growth-oriented organization where I can
-          apply my knowledge, enhance my skills, and contribute to impactful
-          projects.
-        </p>
-      </section>
+        <section class="card glass" id="objective">
+            <h2><i class="fa-solid fa-bullseye"></i> Career Objective</h2>
+            <p>
+                To secure an opportunity in a growth-oriented organization where I can
+                apply my knowledge, enhance my skills, and contribute to innovative and impactful
+                data-driven projects.
+            </p>
+        </section>
 
-      <section class="card">
-        <h2>💡 Skills</h2>
-        <ul class="skills-list">
-          <li>Python</li>
-          <li>C++</li>
-          <li>Pandas</li>
-          <li>NumPy</li>
-          <li>PySpark</li>
-          <li>Data Structures & Algorithms</li>
-          <li>Machine Learning</li>
-          <li>Streamlit</li>
-        </ul>
-      </section>
+        <section class="card glass" id="skills">
+            <h2><i class="fa-solid fa-laptop-code"></i> Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-tag"><i class="fa-solid fa-c"></i> C++</span>
+                <span class="skill-tag"><i class="fa-solid fa-database"></i> Pandas</span>
+                <span class="skill-tag"><i class="fa-solid fa-square-root-variable"></i> NumPy</span>
+                <span class="skill-tag"><i class="fa-solid fa-bolt"></i> PySpark</span>
+                <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> DSA</span>
+                <span class="skill-tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                <span class="skill-tag"><i class="fa-solid fa-chart-line"></i> Streamlit</span>
+            </div>
+        </section>
 
-      <section class="card">
-        <h2>🚀 Projects</h2>
-        <ul>
-          <li>
-            <b>Twitter Sentiment Analysis</b> – NLP-based sentiment classifier
-          </li>
-          <li><b>Smart Price Optimization</b> – ML model using XGBoost</li>
-          <li><b>Shortest Path Visualization</b> – Dijkstra & A* using maps</li>
-        </ul>
-      </section>
+        <section class="card glass" id="projects">
+            <h2><i class="fa-solid fa-rocket"></i> Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-brands fa-twitter"></i></div>
+                    <h3>Twitter Sentiment Analysis</h3>
+                    <p>NLP-based sentiment classifier analyzing public opinion.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-tag"></i></div>
+                    <h3>Smart Price Optimization</h3>
+                    <p>Machine Learning model using XGBoost to predict optimal pricing.</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3>Shortest Path Visualization</h3>
+                    <p>Interactive visualization of Dijkstra & A* algorithms using maps.</p>
+                </div>
+            </div>
+        </section>
 
-      <section class="card">
-        <h2>📝 Essay</h2>
-        <p>Handwritten essay:</p>
-        <img src="essay.jpg" alt="Essay" class="essay-img" />
-      </section>
+        <div class="media-grid">
+            <section class="card glass media-card" id="essay">
+                <h2><i class="fa-solid fa-file-pdf"></i> Essay: AI in Healthcare</h2>
+                <div class="media-container">
+                    <iframe src="essay/ai in healthcare.pdf" width="100%" height="100%" style="border: none;"></iframe>
+                </div>
+            </section>
 
-      <section class="card">
-        <h2>🎥 Self Introduction</h2>
-        <video controls class="video">
-          <source src="intro.mp4" type="video/mp4" />
-        </video>
-      </section>
-    </div>
+            <section class="card glass media-card" id="intro">
+                <h2><i class="fa-solid fa-video"></i> Self Introduction</h2>
+                <div class="media-container">
+                    <video controls class="video" poster="https://via.placeholder.com/600x400/1e293b/9333ea?text=Video+Not+Found">
+                        <source src="media/intro_compressed.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </div>
+    </main>
 
-    <footer>
-      <p>📧 your-email@example.com</p>
-      <p>🔗 LinkedIn: add-link-here</p>
+    <footer class="glass-footer" id="contact">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>Kartikey Nautiyal</h2>
+                <p>Building data-driven solutions.</p>
+            </div>
+            <div class="footer-links">
+                <a href="mailto:kartikeynautiyal37@gmail.com" class="social-link"><i class="fa-solid fa-envelope"></i> kartikeynautiyal37@gmail.com</a>
+                <a href="tel:7060752999" class="social-link"><i class="fa-solid fa-phone"></i> 7060752999</a>
+                <a href="https://github.com/kartikey00-byte" target="_blank" class="social-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://leetcode.com/u/kartikeynautiyal/" target="_blank" class="social-link"><i class="fa-solid fa-code"></i> LeetCode</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Kartikey Nautiyal. All rights reserved.</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
